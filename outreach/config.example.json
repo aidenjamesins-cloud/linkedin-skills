@@ -1,0 +1,12 @@
+{
+  "_note": "Copy to outreach/config.json (gitignored) and edit. licensed_states below are EXAMPLES, replace them with the states you hold a license in.",
+  "board_id": 18439617620,
+  "group_id": "topics",
+  "new_status": "New Lead",
+  "contacted_status": "Contacted",
+  "licensed_states": ["TX", "FL", "GA"],
+  "channels": ["linkedin_note", "linkedin_message", "email"],
+  "min_score_to_draft": 0,
+  "max_linkedin_per_day": 15,
+  "columns": {}
+}
