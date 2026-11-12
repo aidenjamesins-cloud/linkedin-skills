@@ -36,7 +36,7 @@ Python 3.10+. Dry runs need no packages. Live monday writes need `requests`
 
 ```bash
 cp outreach/config.example.json outreach/config.json   # gitignored
-# edit licensed_states: the example values are placeholders
+# check licensed_states (TX, FL, GA, VA, MO, OH as of 2026-11-12)
 ```
 
 For live writes, add a monday API token (monday > your avatar > Developers >
