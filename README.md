@@ -297,6 +297,14 @@ Setup: sign up at [api.pixfaro.com/signup](https://api.pixfaro.com/signup?ref=li
 
 For **text-led visuals** (a quote-card of your hook), the skills skip the image model entirely and use Pixfaro's design templates: `lib.quote_card("<hook>", handle="@you", style="brand")` typesets the card server-side (`POST /v1/renders`), so the line is crisp at any length — same hosted-URL flow. `lib.available_templates()` lists templates and live prices. A brand logo can be uploaded once with `lib.brand_logo("logo.png")` (full-scope key); the returned `logo_id` goes into Voice & Brand Profile §6 and every overlay from then on stamps the real mark.
 
+## Optional: lead sourcing and outreach into monday.com
+
+`outreach/` is a separate, local pipeline (not a skill): it ingests leads from
+CSV exports and manual entry with required provenance, dedupes them, scores
+them like a monday CRM Leads board, checks DNC, consent and licensing, drafts
+outreach with the bundle's voice rules, and writes to monday only after you
+approve. It never sends a message. See [outreach/README.md](outreach/README.md).
+
 ## Voice rules
 
 Every skill follows these rules automatically:
